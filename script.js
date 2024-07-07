@@ -63,7 +63,7 @@ function makeAppear() {
   let btn = document.getElementById('apply');
   btn.addEventListener('click', () => {
     let con = document.getElementById('appear');
-    con.style.height = "500px";
+    con.style.height = "auto";
     con.style.width = "800px";
     document.getElementById('modal').style.display = 'none';
   });
