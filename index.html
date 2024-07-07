@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alaram</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- start of alaram container -->
+    <div id="alaram" class="ob">
+
+      <h1>ALARAM CLOCK</h1>
+      <!-- clock display -->
+      <div id="clock">
+
+      </div>
+
+      <!-- Date display
+       -->
+      <div id="tarik">
+
+      </div>
+      <!-- set alaram button -->
+      <button id="set" class="w3-button w3-round-xxlarge w3-green">SET ALARAM</button>
+    </div>
+    <!-- End of alaram container -->
+
+    <!-- start of alaram list -->
+    <div id="alist"></div>
+    <!-- end of alaram list -->
+
+    <!-- start of modal  -->
+    <div id="modal" class="w3-modal-content w3-animate-opacity">
+      <div id="content">
+        <span onclick="document.getElementById('modal').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+        <h2>Set Alaram</h2>
+        <div id="hm">
+          <div class="box">
+            <label>Hours</label>
+            <select id="hours">
+            </select>
+          </div>
+          <div class="box">
+            <label>Minutes</label>
+            <select id="minutes">
+            </select>
+          </div>
+          <div class="box">
+            <label>Session</label>
+            <select id="ses">
+              <option>AM</option>
+              <option>PM</option>
+            </select>
+          </div>
+
+
+        </div>
+        <div id="submit">
+          <button id="apply" class="w3-button w3-round-xxlarge w3-green">SET</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="ob" id="appear">
+    <h1>Upcomming Alaram's</h1>
+  </div>
+
+  <div class="dance">
+    <div class="tenor-gif-embed" data-postid="11191191849383051209" data-share-method="host" data-aspect-ratio="1"
+      data-width="100%"><a
+        href="https://tenor.com/view/pedro-raccoon-raccoon-pedro-raccoon-meme-memes-gif-11191191849383051209">Pedro
+        Raccoon Raccoon Meme GIF</a>from <a href="https://tenor.com/search/pedro+raccoon-gifs">Pedro Raccoon GIFs</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

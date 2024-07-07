@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'CF';
+  src: url('./linear_beam/Linebeam.ttf') format('truetype');
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+body {
+  display: flex;
+}
+
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1 {
+  font-family: 'CF', sans-serif;
+  color: ivory;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+.ob {
+  position: relative;
+  top: 28px;
+  text-align: center;
+  height: 700px;
+  width: 700px;
+  margin: 50px;
+  margin-top: 0;
+  font-family: 'CF', sans-serif;
+  background-color: rgba(0.1, 0.1, 0.1, 0.3);
+  text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+
+}
+
+#clock {
+  color: #8AFFFF;
+  position: relative;
+  top: 25%;
+  font-size: 3rem;
+}
+
+.dot {
+  color: #00B2B3;
+}
+
+#tarik {
+  color: white;
+  position: relative;
+  top: 30%;
+  font-size: 3rem;
+}
+
+#set {
+  position: relative;
+  top: 40%;
+}
+
+#modal {
+  height: 110%;
+  width: 110%;
+  position: absolute;
+  display: none;
+  background: transparent;
+  background-color: rgba(0.1, 0.1, 0.1, 0.6);
+  z-index: 99;
+  right: 0;
+}
+
+#content {
+  height: 70%;
+  width: 58%;
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  background-color: #5F5F5F;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.w3-display-topright {
+  font-size: 2rem;
+  background: transparent;
+}
+
+#content h2 {
+  padding: 20px;
+  margin: 0%;
+  background: rgba(0.1, 0.1, 0.1, 0.3);
+}
+
+#hm {
+  display: flex;
+  column-gap: 10%;
+  padding: 10px;
+}
+
+.box {
+  margin: 10px;
+}
+
+#content .box select {
+  display: block;
+  padding: 10px 80px;
+  font-size: 1rem;
+  /* border: none; */
+  background: transparent;
+  /* outline: none; */
+  box-shadow: -5px 5px wheat;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+option {
+  background: black;
+}
+
+label {
+  font-size: 2rem;
+}
+
+#submit {
+  position: relative;
+  top: 30%;
+  left: 43%;
+  width: 200px;
+}
+
+#submit button {
+  width: 80%;
+}
+
+#appear {
+  height: 0px;
+  width: 0px;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  text-align: center;
+}
+
+.litem {
+  position: relative;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  left: 15%;
+  box-shadow: -5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  color: skyblue;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+.dance {
+  position: absolute;
+  z-index: -999;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
